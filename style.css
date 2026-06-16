@@ -1,0 +1,284 @@
+html
+{
+   scroll-behavior: smooth;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root
+{
+    --cream:#F5F1E8;
+    --brown:#4A3728;
+    --gold:#D4B06A;
+    --card-color:#FFFDF8;
+    --border-color:#E5DCCB;
+    --hover-color:#C59A4A;
+}
+body
+{
+    background-color: var(--cream);
+    color: var(--brown);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.navbar
+{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    background-color: var(--cream);
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    padding: 25px 5%;
+    margin-bottom: 50px;
+    
+    
+}
+.logo
+{
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    
+}
+.nav-links
+{
+    list-style: none;
+    display: flex;
+    gap:20px;
+}
+.nav-links li a
+{
+    text-decoration: none;
+    color: var(--brown);
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+.nav-links li a:hover
+{
+    text-decoration: underline;
+    color: var(--hover-color);
+    transition: 0.3s;
+}
+span
+{
+    color: var(--gold);
+}
+.hero-sec
+{
+    display: flex;
+    gap: 45px;
+    margin: 10%;
+    align-items: center;
+}
+.hero-img
+{
+    margin-left: 40px;
+    margin-top: -100px;
+}
+.hero-img img
+{
+    border-radius: 15px;
+    object-fit: cover;
+    width: 350px;
+    height: 450px;
+}
+.hero-content h1
+{
+    font-size: 55px;
+    font-weight: 900;
+    margin-bottom: 30px;
+}
+.hero-content p
+{
+    font-size: 20px;
+}
+.btn-1
+{
+    margin-top: 20px;
+    font-size: 17px;
+    padding: 10px;
+    background-color: var(--brown);
+    border-radius: 10px;
+}
+.btn-1 a
+{
+    color: var(--cream);
+    text-decoration: none;
+    
+}
+.btn-1 a:hover
+{
+    transition: 0.3s ease;
+    color: var(--hover-color);
+
+}
+.categories-sec
+{
+    text-align: center;
+    
+}
+.categories-sec h1
+{
+    font-size: 40px;
+    margin: 20px;
+}
+.categories-sec p
+{
+    font-size: 20px;
+    margin: 30px;
+}
+.gallery-sec
+{
+    align-items: flex-start;
+    display: flex;
+    gap: 40px;
+    margin: 40px auto;
+    justify-content: center;
+}
+.gallery-sec figure
+{
+    margin:0;
+    width: 300px;
+    text-align: center;
+    
+}
+.gallery-sec img
+{
+    border-radius: 10px;
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+}
+.gallery-sec figcaption
+{
+    text-align: center;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.gallery-sec button
+{
+    background-color: var(--brown);
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.gallery-sec button a
+{
+    text-decoration: none;
+    color: var(--card-color);
+}
+.gallery-sec button a:hover
+{
+    color: var(--hover-color);
+    transition: 0.3s ease;
+}
+.his-section
+{
+    display: flex;
+    margin-top: 150px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.his-section figure
+{
+    flex-direction: column;
+}
+.his-section img
+{
+    width: 250px;
+    height: 350px;
+}
+.his-section figcaption
+{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    flex-direction: column;
+}
+.his-section button
+{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--brown);
+    margin-left: 30%;
+    margin-top: 10%;
+}
+.his-section button a
+{
+    text-decoration: none;
+   color: var(--cream);
+}
+.his-section button a:hover
+{
+    color: var(--hover-color);
+    transition: 0.3s ease;
+}
+.order-sec
+{
+    text-align: center;
+    margin: 50px;
+}
+.order-sec h1
+{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+.input-sec
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: var(--cream);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+}
+.btn3
+{
+    background-color: var(--brown);
+    color: var(--cream);
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+.order-sec input::placeholder, .order-sec textarea::placeholder
+{
+    color: #8b7365;
+}
+.contact-sec
+{
+    padding: 40px 0;
+    margin-top: 30px;
+    background-color: var(--cream);
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+.contact-sec a
+{
+    text-decoration: none;
+    color: var(--brown);
+}
+.contact-sec a:hover
+{
+    color: var(--hover-color);
+    transition: 0.3s ease;
+}
+.footer-bottom
+{
+    font-size: 13px;
+    border-top: 1px solid var(--border-color);
+    padding: 8px;
+    margin: 10px;
+    text-align: center;
+}
